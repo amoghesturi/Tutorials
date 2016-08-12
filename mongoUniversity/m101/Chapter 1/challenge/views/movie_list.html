@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Movie list</title>
+  </head>
+  <body>
+    <h1>Post a new movie</h1>
+    </br>
+    <div>
+      <form action="/movies" method="POST">
+        Name: <input type="text" name="name" value="">
+        Year: <input type="text" name="year" value="">
+        IMDB: <input type="text" name="imdb" value="">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div>
+      <p>{{message}}
+    </div>
+    </br>
+    </br>
+    <h1>Movies</h1>
+    </br>
+    <div>
+      {% for movie in movies%}
+        <li>
+          <a href="http://imdb.com/title/{{movie.imdb}}">{{movie.name}} ({{movie.year}})</a>
+        </li>
+      {% else %}
+        <li>No movies found..</li>
+      {% endfor %}
+    </div>
+  </body>
+</html>
