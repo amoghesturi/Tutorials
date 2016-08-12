@@ -2,17 +2,21 @@
   "name": "TDD_with_node_and_mongo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
     "cors": "^2.7.1",
     "express": "^4.14.0",
     "method-override": "^2.3.6",
+    "mocha": "^3.0.2",
+    "mongoose": "^4.5.8",
     "morgan": "^1.7.0",
-    "mongoose": "^4.5.8"
+    "sinon": "^1.17.5",
+    "sinon-mongoose": "^1.2.1"
   },
   "devDependencies": {},
   "scripts": {
